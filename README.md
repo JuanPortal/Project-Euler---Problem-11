@@ -1,3 +1,3 @@
-This is the solution to the Problem 11 of the Project Euler
+These are the solutions to tha Project Euler's problems
 
-https://projecteuler.net/problem=11
+https://projecteuler.net/
