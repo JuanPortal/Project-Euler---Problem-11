@@ -1,7 +1,7 @@
 # Project Euler - Problem 21
 
 
-def sDivisores(n):
+def d(n):
     divisors = []
     for j in range(1, n):
         if n % j == 0:
@@ -9,11 +9,11 @@ def sDivisores(n):
     return sum(divisors)
 
 
-conjunto = set([])
+amicable_numbers = set([])
 for i in range(10000):
-    if sDivisores(sDivisores(i)) == i and sDivisores(i) != i:
-        conjunto.add(i)
-        conjunto.add(sDivisores(i))
+    if d(d(i)) == i and d(i) != i:
+        amicable_numbers.add(i)
+        amicable_numbers.add(d(i))
 
-print(conjunto)
-print(sum(conjunto))
+# print(amicable_numbers)
+print(sum(amicable_numbers))
