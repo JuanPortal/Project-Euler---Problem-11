@@ -1,16 +1,11 @@
 # Project Euler - Problem 16
 
 
-def sumaDigitos(n):
-    suma = 0
+def digits_sum(n):
+    sum = 0
     for i in str(n):
-        suma += int(i)
-    return suma
+        sum += int(i)
+    return sum
 
 
-'''j = 1
-while j < 1001:
-    print(f"{2 ** j} --> {sumaDigitos(2 ** j)}")
-    j += 1'''
-
-print(sumaDigitos(2 ** 1000))
+print(digits_sum(2 ** 1000))
