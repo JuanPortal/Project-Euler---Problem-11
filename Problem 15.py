@@ -2,12 +2,12 @@
 
 
 def factorial(n):
-    producto = 1
+    product = 1
     for i in range(1, n + 1):
-        producto *= i
-    return producto
+        product *= i
+    return product
 
 
-resultado = factorial(40)/(factorial(20)*factorial(20))
+result = factorial(40) / (factorial(20) * factorial(20))
 
-print(int(resultado))
+print(int(result))
