@@ -1,18 +1,16 @@
 # Project Euler - Problem 17
 
-import inflect
+import inflect  # inflect helps us to get the name of the numbers
 
 p = inflect.engine()
 
 
-def fix(cadenita):
-    cadenita = cadenita.replace("-", "")
-    cadenita = cadenita.replace(" ", "")
-    return cadenita
+def fix(string):
+    return string.replace("-", "").replace(" ", "")
 
 
-suma = 0
+sum = 0
 for i in range(1, 1001):
-    suma += len(fix(p.number_to_words(i)))
+    sum += len(fix(p.number_to_words(i)))
 
-print(suma)
+print(sum)
