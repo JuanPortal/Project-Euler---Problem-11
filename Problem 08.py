@@ -1,6 +1,6 @@
 # Project Euler - Problem 8
 
-numero = "73167176531330624919225119674426574742355349194934\
+number = "73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
 85861560789112949495459501737958331952853208805511\
 12540698747158523863050715693290963295227443043557\
@@ -21,19 +21,19 @@ numero = "73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 
-lista = []
-for i in numero:
-    lista.append(int(i))
+numbers_list = []
+for i in number:
+    numbers_list.append(int(i))
 
 
-def sumatoria(listiti, n):
-    productos = []
+def products(list, n):
+    products_list = []
     for j in range(1000 - n + 1):
         prod = 1
         for k in range(n):
-            prod *= listiti[j + k]
-        productos.append(prod)
-    return productos
+            prod *= list[j + k]
+        products_list.append(prod)
+    return products_list
 
 
-print(max(sumatoria(lista, 13)))
+print(max(products(numbers_list, 13)))
