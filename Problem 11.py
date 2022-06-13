@@ -419,7 +419,7 @@ for i in range(20):
     print()
 
 
-# Now we have to create different functions for the different ways we can move (up, down, left, right, or diagonally)
+# Now we have to create different functions for the different ways we can move (up, down, left, right or diagonally)
 
 # Let's start vertically
 def vertically(table):
